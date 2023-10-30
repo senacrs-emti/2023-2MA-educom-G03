@@ -51,12 +51,14 @@ if place_meeting (x+1,y,obj_endfase) {
 }
 
 //sistema de tiro
+	if global.featuregun == 1 {
 var tiro = keyboard_check_pressed(ord("X"));
 		if (tiro) && global.bullet>0 {
 		var t = instance_create_layer(x,y,"shoot",obj_shoot);
 		t.speed = 20;
 		t.direction = 180 * olhando;
 		global.bullet-=1
+	}
 	}
 	
 //vida
@@ -65,7 +67,7 @@ if global.life = 0 {
 	}
 	
 //moedas
-if global.coin == 5 {
+if global.coin == 15 {
 	global.coin = 0;
 	global.life+=1;
 }

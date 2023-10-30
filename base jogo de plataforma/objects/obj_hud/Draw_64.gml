@@ -35,10 +35,12 @@ draw_set_font(Font1)
 draw_set_color(c_white)
 draw_text (1200, 60, global.coin);
 
+if global.bullet > 1 {
 draw_set_font(Font1)
 draw_set_color(c_white)
 draw_text (900, 60, global.bullet);
+}
 
-if global.life = 6 {
-	global.life=5;	
+if global.life = 5 {
+	global.life=4;	
 }

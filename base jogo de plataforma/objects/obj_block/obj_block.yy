@@ -26,9 +26,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_block",
-    "path": "sprites/spr_block/spr_block.yy",
+    "name": "Sprite19",
+    "path": "sprites/Sprite19/Sprite19.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

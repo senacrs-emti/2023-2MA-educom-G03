@@ -7,8 +7,8 @@ move = -keyboard_check(vk_left) +keyboard_check(vk_right)
 
 hsp = move*spd
 
-	if move = -1 {olhando = 1}
-	if move = 1 {olhando = 0}
+	if move = -1 {global.olhando = 1}
+	if move = 1 {global.olhando = 0}
 //correr
 if keyboard_check(vk_control) {
 	spd=10.5
@@ -51,16 +51,14 @@ if place_meeting (x+1,y,obj_endfase) {
 }
 
 //sistema de tiro
-	if global.featuregun == 1 {
 var tiro = keyboard_check_pressed(ord("X"));
-		if (tiro) && global.bullet>0 {
+		if (tiro) && global.bullet>0 && global.featuregun>0 {
 		var t = instance_create_layer(x,y,"shoot",obj_shoot);
 		t.speed = 20;
-		t.direction = 180 * olhando;
+		t.direction = 180 * global.olhando;
 		global.bullet-=1
 	}
-	}
-	
+
 //vida
 if global.life = 0 {
 	game_restart();

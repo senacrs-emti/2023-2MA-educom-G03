@@ -13,11 +13,11 @@ pulos=0;
 
 //contador de moedas
 
+//tiro
+global.bullet = 10000;
+global.olhando = 0;
+
 //feature
 global.featuredouble = 0;
 global.featuregun = 0;
 global.featuresprint = 0;
-
-//tiro
-global.bullet = 0;
-olhando = 0;

@@ -33,7 +33,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"obj_follow","path":"objects/obj_follow/obj_follow.yy",},},
@@ -65,7 +65,6 @@
     {"id":{"name":"scr_colision","path":"scripts/scr_colision/scr_colision.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_deathtrigger","path":"objects/obj_deathtrigger/obj_deathtrigger.yy",},},
-    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_copy","path":"objects/obj_copy/obj_copy.yy",},},

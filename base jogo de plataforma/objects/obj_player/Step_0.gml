@@ -10,6 +10,7 @@ hsp = move*spd
 	if move = -1 {olhando = 1}
 	if move = 1 {olhando = 0}
 //correr
+
 if keyboard_check(vk_control) {
 	spd=10.5
 } else {

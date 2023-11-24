@@ -30,5 +30,5 @@
     "path": "sprites/Sprite19/Sprite19.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

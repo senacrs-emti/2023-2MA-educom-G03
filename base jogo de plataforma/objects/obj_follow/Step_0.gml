@@ -11,3 +11,4 @@ if distance_to_object(obj_player) < distance {
 vir = sign(obj_player.x - x);
 hsp = vir * 4;
 }
+

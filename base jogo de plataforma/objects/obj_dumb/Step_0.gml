@@ -10,3 +10,6 @@ hsp = spd * dir;
 if (place_meeting(x + dir, y, obj_block)) {
 	dir =	dir * -1;	
 }
+if (place_meeting(x + dir + 1, y, obj_secondlayer)) {
+	dir =	dir * -1;	
+}

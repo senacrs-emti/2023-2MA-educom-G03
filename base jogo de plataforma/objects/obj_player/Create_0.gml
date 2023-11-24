@@ -20,4 +20,4 @@ global.olhando = 0;
 //feature
 global.featuredouble = 0;
 global.featuregun = 0;
-global.featuresprint = 0;
+global.featuresprint = 1;

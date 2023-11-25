@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_personagem",
-    "path": "sprites/spr_personagem/spr_personagem.yy",
+    "name": "spr_playeridle",
+    "path": "sprites/spr_playeridle/spr_playeridle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

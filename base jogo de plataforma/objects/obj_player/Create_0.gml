@@ -21,3 +21,5 @@ global.olhando = 0;
 global.featuredouble = 0;
 global.featuregun = 0;
 global.featuresprint = 1;
+
+audio_play_sound(s_fase, 1, infinity);

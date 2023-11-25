@@ -10,22 +10,45 @@ hsp = move*spd
 	if move = -1 {global.olhando = 1}
 	if move = 1 {global.olhando = 0}
 //correr
+
 if keyboard_check(vk_control) {
-	spd=10.5
+	image_speed = 2.5;
+	spd=10.5;
 } else {
-	spd=8.5
+	image_speed = 1;
+	spd=5.5;
 	}
 
 
 //sprite
 if move = 1 {
-	sprite_index = spr_playerright;
+	sprite_index = spr_playerwalk;
+	image_xscale = 1;
 }
 if move = -1 {
-	sprite_index = spr_playerleft;
+	sprite_index = spr_playerwalk;
+	image_xscale = -1;
 }
 if move = 0 {
-	sprite_index = spr_personagem
+	sprite_index = spr_playeridle;
+}
+
+if move = 1{
+	if global.featuregun = 1{
+		sprite_index = spr_playerwalkgun;
+		image_xscale = 1;
+	}
+}
+if move = -1{
+	if global.featuregun = 1{
+		sprite_index = spr_playerwalkgun;
+		image_xscale = -1;
+	}
+}
+if move = 0{
+	if global.featuregun = 1{
+		sprite_index = spr_playeridlegun;
+	}
 }
 
 //colisao
@@ -53,10 +76,11 @@ if place_meeting (x+1,y,obj_endfase) {
 //sistema de tiro
 var tiro = keyboard_check_pressed(ord("X"));
 		if (tiro) && global.bullet>0 && global.featuregun>0 {
-		var t = instance_create_layer(x,y,"shoot",obj_shoot);
+		var t = instance_create_layer(x,y-72,"shoot",obj_shoot);
 		t.speed = 20;
 		t.direction = 180 * global.olhando;
 		global.bullet-=1
+		audio_play_sound(s_tiro, 2, 0);
 	}
 
 //vida

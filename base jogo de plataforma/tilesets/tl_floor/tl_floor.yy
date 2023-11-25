@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "Sprite18",
-    "path": "sprites/Sprite18/Sprite18.yy",
+    "name": "spr_tile",
+    "path": "sprites/spr_tile/spr_tile.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

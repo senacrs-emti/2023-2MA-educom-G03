@@ -14,7 +14,7 @@ pulos=0;
 //contador de moedas
 
 //tiro
-global.bullet = 10000;
+global.bullet = 0;
 global.olhando = 0;
 
 //feature

@@ -8,6 +8,14 @@ if (place_meeting(x + dir, y, obj_block)) {
 	dir =	dir * -1;	
 }
 
+if dir = 1{
+	image_xscale = 1;
+}
+
+if dir = -1{
+	image_xscale = -1;
+}
+
 //copy
 
 if place_meeting(x,y+1,obj_block)

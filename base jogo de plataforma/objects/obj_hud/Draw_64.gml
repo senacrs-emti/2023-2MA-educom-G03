@@ -34,10 +34,12 @@ if global.life = 1 {
 draw_set_font(Font1)
 draw_set_color(c_white)
 draw_text (1200, 60, global.coin);
+draw_sprite(spr_coin, 1, 1250, 60)
 
 draw_set_font(Font1)
 draw_set_color(c_white)
 draw_text (900, 60, global.bullet);
+draw_sprite(spr_recharge, 1, 950, 60);
 
 if global.life = 6 {
 	global.life=5;	

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #a4eba1, #045206);
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 10px; /* Reduzi o padding para diminuir a altura vertical */
+    background-color: #fff;
+    width: 100%; /* Faz o header ocupar toda a largura */
+    background: linear-gradient(to right, #c7ecbd, #138848);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 70%; 
+    max-width: 400px; 
+    padding: 10px;
+    border: 2px solid #ccc; /* Aumentei a espessura da borda */
+    border-radius: 15px; /* Adicionei uma borda mais circular */
+    box-shadow: 0 8px 12px rgba(2, 2, 2, 2); /* Adicionei uma sombra */    
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: #333;
+}
+
